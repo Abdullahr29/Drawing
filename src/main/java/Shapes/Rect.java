@@ -1,14 +1,15 @@
+package Shapes;
+
+import Shapes.Shape;
+
 import java.awt.*;
 
-public class Rect {
-    private Point pos;
-    private Color col;
+public class Rect extends Shape {
     private int height;
     private int width;
 
     public Rect(Point initPos, Color col, int h, int w){
-        pos = initPos;
-        this.col = col;
+        super(initPos, col);
         height = h;
         width = w;
     }
